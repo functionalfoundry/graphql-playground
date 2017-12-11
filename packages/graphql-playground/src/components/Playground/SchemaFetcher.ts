@@ -30,8 +30,6 @@ export class SchemaFetcher {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
-        'X-Apollo-Tracing': '1',
-        credentials: 'include',
         ...headers,
       },
       body: JSON.stringify({ query: introspectionQuery }),
